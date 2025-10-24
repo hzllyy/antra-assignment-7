@@ -1,0 +1,83 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.todo__form {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  height: 40px;
+}
+
+.add__btn {
+  color: white;
+  background-color: #3a8cb7;
+  border: 1px solid #3a8cb7;
+  border-radius: 3px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.list__container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px;
+}
+
+.full__list {
+  width: 40vw;
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.list__bones {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li {
+  list-style-type: none;
+  background-color: #e4e1d3;
+  padding: 5px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn__div {
+  display: flex;
+  gap: 5px;
+}
+
+li button {
+  height: 25px;
+  width: 30px;
+  border-radius: 3px;
+}
+
+.edit__btn {
+  background-color: #3a8cb7;
+}
+
+.del__btn {
+  background-color: #bb534d;
+}
+
+.toggle__btn {
+  background-color: #8eac56
+}
+
+
+
+
