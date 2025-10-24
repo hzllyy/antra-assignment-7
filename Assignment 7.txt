@@ -1,0 +1,14 @@
+﻿1. What’s the purpose of using the key attribute when we render a list of items in JSX?
+A: The key attribute is an unique identifier that keeps track of each item in an array. It tells React which array item corresponds to which component.
+
+
+2. What is a  “children” props?
+A: Children props are special props that allow parent components to render whatever is nested inside of them.
+
+
+3. What is pure function and pure component?
+A: A pure function is a function that does not change its inputs and outputs, and does not change any objects or variables that exist before they are called.
+
+
+4. What is conditional rendering? How do you implement it effectively?
+A: Conditional rendering is used when rendering different things based on different conditions. You can implement it by using the logical and operator (&&), ternary operator, or a common if else statement.
