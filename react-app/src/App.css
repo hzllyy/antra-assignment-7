@@ -60,6 +60,13 @@ li {
   gap: 5px;
 }
 
+.completed__div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+} 
+
 li button {
   height: 25px;
   width: 30px;

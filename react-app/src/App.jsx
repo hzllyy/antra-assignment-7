@@ -1,5 +1,7 @@
 import './App.css'
-import { todos } from './todosData.js'
+import { todos } from './todosData.js';
+import Input from './_components/input.jsx';
+import Buttons from './_components/buttons.jsx';
 
 function Lists() {
 
@@ -8,23 +10,17 @@ function Lists() {
   
   return (
     <div>
-      <div className="todo__form">
-        <input type="text" id="input"></input>
-        <button className="add__btn">submit</button>
-      </div>
+
+      <Input></Input>
     
       <div className="list__container">
         <div className="full__list">
           <h1>Pending Tasks</h1>
           <ul className="list__bones">
             {incompleteTodos.map((todo) => 
-              <li key={todo.title}>
+              <li key={todo.id}>
                 {todo.title}
-                <div className="btn__div">
-                  <button className="edit__btn"></button>
-                  <button className="del__btn"></button>
-                  <button className="toggle__btn"></button>
-                </div>
+                <Buttons status="pending"/>
               </li>
             )}
           </ul>
@@ -34,15 +30,10 @@ function Lists() {
           <h1>Completed Tasks</h1>
           <ul className="list__bones">
             {completeTodos.map((todo) => 
-              <li key={todo.title}>
-                <button className="toggle__btn"></button>
-                {todo.title}
-                <div className="btn__div">
-                  <button className="edit__btn">
-                    <i className="fa-solid fa-pen"></i>
-                  </button>
-                  <button className="del__btn"></button>
-                </div>
+              <li key={todo.id}>
+                <Buttons status="completed">
+                  {todo.title}
+                </Buttons>
               </li>
             )}
           </ul>
