@@ -85,6 +85,14 @@ li button {
   background-color: #8eac56
 }
 
+.icon {
+  color: white;
+  display: flex;
+  position: relative;
+  right: 10px;
+  bottom: 6px;
+}
+
 
 
 
