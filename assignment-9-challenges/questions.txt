@@ -1,0 +1,11 @@
+1. What is immutability?
+A: Immutability is the idea that a value is unchangeable or read-only. In react, we are expected to treat states as immutable, and in order to change states, we must make copies.
+
+2. What is state update batching and why?
+A: State batching is when React waits until all code in event handlers run before processing state updates. This allows the React app to run faster, and avoids dealing with half-finished renders.
+
+3. What are the 2 forms of setState argument and what is the difference?
+A: There is the state variable, which is the value you store, and the state setter function, which updates the state variable and triggers react to re-render the component.
+
+4. Controlled vs uncontrolled components
+A: Controlled components are managed by the React state, while uncontrolled components are managed by the DOM. Because React interacts with the form element indirectly, controlled components can be used for dynamic and real-time behavior.
