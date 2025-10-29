@@ -20,11 +20,11 @@ function DelBtn({ onDelete, id }) {
 function ToggleBtn({ completed, id, onToggle }) {
     return (
         <>
-            { completed === 'false' ?
-                (<button className="toggle__btn" onClick={() => onToggle(id)}>
+            { completed === false ?
+                (<button className="toggle__btn" onClick={() => onToggle(id, completed)}>
                     <FontAwesomeIcon icon={faArrowRight} className="icon"></FontAwesomeIcon>
                 </button>) :
-                (<button className="toggle__btn" onClick={() => onToggle(id)}>
+                (<button className="toggle__btn" onClick={() => onToggle(id, completed)}>
                     <FontAwesomeIcon icon={faArrowLeft} className="icon"></FontAwesomeIcon>
                 </button>  
                 )
@@ -53,10 +53,10 @@ export default function Buttons( {
                 (<div className="btn__div">
                     <EditBtn onEdit={() => isEditing ? saveEdit(id) : startEdit(id, title)}></EditBtn>
                     <DelBtn onDelete={onDelete} id={id}></DelBtn>
-                    <ToggleBtn completed='false' onToggle={onToggle} id={id}></ToggleBtn>
+                    <ToggleBtn completed={false} onToggle={onToggle} id={id}></ToggleBtn>
                 </div>) :
                 (<div className="completed__div">
-                    <ToggleBtn completed="true" onToggle={onToggle} id={id}></ToggleBtn>
+                    <ToggleBtn completed={true} onToggle={onToggle} id={id}></ToggleBtn>
                     {children}
                     <div className="btn__div">
                         <EditBtn onEdit={() => isEditing ? saveEdit(id) : startEdit(id, title)}></EditBtn>

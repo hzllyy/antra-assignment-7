@@ -9,6 +9,7 @@
   justify-content: center;
   gap: 5px;
   height: 40px;
+  padding-top: 25px;
 }
 
 .add__btn {
@@ -91,6 +92,10 @@ li button {
   position: relative;
   right: 10px;
   bottom: 6px;
+}
+
+.list__text {
+  padding: 0 20px;
 }
 
 
