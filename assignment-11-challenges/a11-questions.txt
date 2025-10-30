@@ -1,0 +1,11 @@
+1. What is state lifting and props drilling?
+A: State lifting occurs when two components always change together, and so we remove their individual states and move it to the closest common parent in order to pass them down as props. Prop drilling occurs when the nearest common ancestor is extremely far removed from the components that need data, which leads to a state that is lifted so high it may be difficult to follow, as the props would need to be passed down multiple layers of components.
+
+2. How to avoid props drilling?
+A: We can avoid prop drilling through using the useContext hook, which allows a parent component to provide data to the entire tree below it.
+
+3. Compare useState vs useReducer. When is useReducer a better choice?
+A: useState is advantageous when state updates are simple, and it is easier to read and write upfront. useReducer is more convenient if a lot of your event handlers modify a state in a similar way, and also help with debugging because of the separation of the how and what happened.
+
+4. How to trigger a re-render in React?
+A: A rerender is triggered in react when we update a state, often using useState. React also rerenders when a parent component rerenders and passes a prop to a child component, causing the child component to rerender.
